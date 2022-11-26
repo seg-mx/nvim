@@ -1,0 +1,7 @@
+{
+  "coc.preferences.extensionUpdateCheck": "never",
+  "diagnostic.warningSign": "",
+  "diagnostic.errorSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "ﯧ"
+}

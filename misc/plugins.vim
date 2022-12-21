@@ -10,6 +10,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'navarasu/onedark.nvim'
 
 call plug#end()
 
@@ -19,3 +20,4 @@ so ~/.config/nvim/plugins/coc.vim
 so ~/.config/nvim/plugins/devicons.vim
 so ~/.config/nvim/plugins/signify.vim
 luafile ~/.config/nvim/plugins/treesitter.lua
+luafile ~/.config/nvim/plugins/onedark.lua

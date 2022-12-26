@@ -2,8 +2,8 @@ let g:DevIconsEnableFoldersOpenClose = 1
 let g:DevIconsDefaultFolderOpenSymbol = ''
 let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ''
 
-function! NERDTreeHighlightIcon(name, icon, color)
-    exec 'autocmd filetype nerdtree highlight ' . a:name .'_icon ctermbg=none ctermfg='. a:color
+function! NERDTreeHighlightIcon(name, icon, color, hexcolor)
+    exec 'autocmd filetype nerdtree highlight ' . a:name .'_icon ctermbg=none ctermfg='. a:color . ' guifg=' . a:hexcolor
     exec 'autocmd filetype nerdtree syn match ' . a:name .'_icon #'. a:icon .'# containedin=NERDTreeFlags'
 endfunction
 
@@ -11,6 +11,7 @@ endfunction
 let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = {} " needed
 let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitignore']     = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.gitconfig']     = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.git']           = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['package.json']   = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['node_modules']   = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['.env']           = ''
@@ -33,23 +34,23 @@ let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['lua']        = ''
 let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['sh']         = ''
 
 " Icon colors
-call NERDTreeHighlightIcon('white', '\s\+', 'white')
+call NERDTreeHighlightIcon('white', '\s\+', 'white', '#FFFFFF')
 
-call NERDTreeHighlightIcon('open_folder',     '',   'cyan')
-call NERDTreeHighlightIcon('close_folder',    '',   'cyan')
-call NERDTreeHighlightIcon('typescript',      'ﯤ',   'blue')
-call NERDTreeHighlightIcon('javascript',      '',   'yellow')
-call NERDTreeHighlightIcon('json',            '',   'yellow')
-call NERDTreeHighlightIcon('html',            '',   'red')
-call NERDTreeHighlightIcon('css',             '',   'cyan')
-call NERDTreeHighlightIcon('java',            '',   'red')
-call NERDTreeHighlightIcon('git',             '',   'magenta')
-call NERDTreeHighlightIcon('env',             '',   'magenta')
-call NERDTreeHighlightIcon('rust',            '',   'red')
-call NERDTreeHighlightIcon('python',          '',   'yellow')
-call NERDTreeHighlightIcon('vim',             '',   'green')
-call NERDTreeHighlightIcon('nodejs',          '',   'green')
-call NERDTreeHighlightIcon('c',               '',   'blue')
-call NERDTreeHighlightIcon('kotlin',          '',   'blue')
-call NERDTreeHighlightIcon('lua',             '',   'blue')
-call NERDTreeHighlightIcon('bash',            '',   'magenta')
+call NERDTreeHighlightIcon('open_folder',     '',   'cyan', '#00AAFF')
+call NERDTreeHighlightIcon('close_folder',    '',   'cyan', '#00AAFF')
+call NERDTreeHighlightIcon('typescript',      'ﯤ',   'blue', '#007ACC')
+call NERDTreeHighlightIcon('javascript',      '',   'yellow', '#F0DB4F')
+call NERDTreeHighlightIcon('json',            '',   'yellow', '#FFFF4F')
+call NERDTreeHighlightIcon('html',            '',   'red', '#F06529')
+call NERDTreeHighlightIcon('css',             '',   'cyan', '#2965F1')
+call NERDTreeHighlightIcon('java',            '',   'red', '#F89820')
+call NERDTreeHighlightIcon('git',             '',   'magenta', '#F34F29')
+call NERDTreeHighlightIcon('env',             '',   'magenta', '#909090')
+call NERDTreeHighlightIcon('rust',            '',   'red', '#CE412B')
+call NERDTreeHighlightIcon('python',          '',   'yellow', '#4584B6')
+call NERDTreeHighlightIcon('vim',             '',   'green', '#7EBF50')
+call NERDTreeHighlightIcon('nodejs',          '',   'green', '#3C873A')
+call NERDTreeHighlightIcon('c',               '',   'blue', '#1594B6')
+call NERDTreeHighlightIcon('kotlin',          '',   'blue', '#B125EA')
+call NERDTreeHighlightIcon('lua',             '',   'blue', '#000080')
+call NERDTreeHighlightIcon('bash',            '',   'magenta', '#909090')

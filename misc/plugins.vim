@@ -14,6 +14,7 @@ Plug 'navarasu/onedark.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'numToStr/Comment.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'nvim-lualine/lualine.nvim'
 
 call plug#end()
 
@@ -27,3 +28,4 @@ luafile ~/.config/nvim/plugins/onedark.lua
 luafile ~/.config/nvim/plugins/blankline.lua
 luafile ~/.config/nvim/plugins/comment.lua
 luafile ~/.config/nvim/plugins/colorizer.lua
+luafile ~/.config/nvim/plugins/lualine.lua

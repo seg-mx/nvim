@@ -1,3 +1,6 @@
+" Colors "
+set termguicolors
+
 " Tabs "
 set smartindent
 set tabstop=4

@@ -12,6 +12,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'navarasu/onedark.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'numToStr/Comment.nvim'
 
 call plug#end()
 
@@ -23,3 +24,4 @@ so ~/.config/nvim/plugins/signify.vim
 luafile ~/.config/nvim/plugins/treesitter.lua
 luafile ~/.config/nvim/plugins/onedark.lua
 luafile ~/.config/nvim/plugins/blankline.lua
+luafile ~/.config/nvim/plugins/comment.lua

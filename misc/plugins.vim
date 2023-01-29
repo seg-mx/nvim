@@ -15,6 +15,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'numToStr/Comment.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'tpope/vim-sleuth'
 
 call plug#end()
 

@@ -1,7 +1,9 @@
 {
+  "sumneko-lua.enableNvimLuaDev": true,
   "coc.preferences.extensionUpdateCheck": "never",
   "diagnostic.warningSign": "",
   "diagnostic.errorSign": "",
   "diagnostic.infoSign": "",
-  "diagnostic.hintSign": "ﯧ"
+  "diagnostic.hintSign": "ﯧ",
+  "Lua.hint.enable": false
 }

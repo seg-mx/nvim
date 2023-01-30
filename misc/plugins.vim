@@ -16,6 +16,8 @@ Plug 'numToStr/Comment.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'tpope/vim-sleuth'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 call plug#end()
 

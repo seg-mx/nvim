@@ -17,3 +17,9 @@ nnoremap <silent> <Leader>k <C-w>k
 nnoremap <silent> <Leader>l <C-w>l
 
 nnoremap <Leader>nt :NERDTreeToggle<CR>
+
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <Cmd>Telescope find_files<CR>
+nnoremap <leader>fg <Cmd>Telescope live_grep<CR>
+nnoremap <leader>fb <Cmd>Telescope buffers<CR>
+nnoremap <leader>fh <Cmd>Telescope help_tags<CR>

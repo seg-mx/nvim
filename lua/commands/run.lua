@@ -14,9 +14,9 @@ end
 function Run()
     local filetype = vim.bo.filetype;
     local commands = {
-        rs = 'rustc -o ~/.executables% % && ~/.executables/%',
-        js = 'node %',
-        ts = 'tsc % --outFile ~/.executables/%:t:r && node ~/.executables/%:t:r',
+        rust = 'rustc -o ~/.executables% % && ~/.executables/%',
+        javascript = 'node %',
+        typescript = 'tsc % --outFile ~/.executables/%:t:r && node ~/.executables/%:t:r',
         sh = 'bash %',
     }
 
@@ -26,9 +26,9 @@ end
 function RunProject()
     local filetype = vim.bo.filetype;
     local commands = {
-        rs = 'cargo run',
-        js = 'npm run start',
-        ts = 'npm run start',
+        rust = 'cargo run',
+        javascript = 'npm run start',
+        typescript = 'npm run start',
         html = 'npm run start',
     }
 

@@ -1,66 +1,23 @@
 local plugins = {
-    {
-        id = 'mattn/emmet-vim'
-    },
-    {
-        id = 'preservim/nerdtree',
-        configFile = 'nerdtree'
-    },
-    {
-        id = 'windwp/nvim-autopairs',
-        configFile = 'autopairs'
-    },
+    { id = 'mattn/emmet-vim' },
+    { id = 'preservim/nerdtree' },
+    { id = 'windwp/nvim-autopairs' },
+    { id = 'Xuyuanp/nerdtree-git-plugin' },
+    { id = 'ryanoasis/vim-devicons' },
+    { id = 'nvim-treesitter/nvim-treesitter' },
+    { id = 'mhinz/vim-signify' },
+    { id = 'tpope/vim-fugitive' },
+    { id = 'junegunn/gv.vim' },
+    { id = 'navarasu/onedark.nvim' },
+    { id = 'lukas-reineke/indent-blankline.nvim' },
+    { id = 'numToStr/Comment.nvim' },
+    { id = 'norcalli/nvim-colorizer.lua' },
+    { id = 'nvim-lualine/lualine.nvim' },
+    { id = 'tpope/vim-sleuth' },
+    { id = 'nvim-lua/plenary.nvim' },
     {
         id = 'neoclide/coc.nvim',
-        configFile = 'coc',
         options = [[{ 'branch': 'release' }]]
-    },
-    {
-        id = 'Xuyuanp/nerdtree-git-plugin'
-    },
-    {
-        id = 'ryanoasis/vim-devicons',
-        configFile = 'devicons'
-    },
-    {
-        id = 'nvim-treesitter/nvim-treesitter',
-        configFile = 'treesitter'
-    },
-    {
-        id = 'mhinz/vim-signify',
-        configFile = 'signify'
-    },
-    {
-        id = 'tpope/vim-fugitive'
-    },
-    {
-        id = 'junegunn/gv.vim'
-    },
-    {
-        id = 'navarasu/onedark.nvim',
-        configFile = 'onedark'
-    },
-    {
-        id = 'lukas-reineke/indent-blankline.nvim',
-        configFile = 'blankline'
-    },
-    {
-        id = 'numToStr/Comment.nvim',
-        configFile = 'comment'
-    },
-    {
-        id = 'norcalli/nvim-colorizer.lua',
-        configFile = 'colorizer'
-    },
-    {
-        id = 'nvim-lualine/lualine.nvim',
-        configFile = 'lualine'
-    },
-    {
-        id = 'tpope/vim-sleuth'
-    },
-    {
-        id = 'nvim-lua/plenary.nvim'
     },
     {
         id = 'nvim-telescope/telescope.nvim',
@@ -82,9 +39,3 @@ for _, value in ipairs(plugins) do
 end
 
 vim.cmd [[call plug#end()]]
-
-for _, value in ipairs(plugins) do
-    if (value.configFile ~= nil) then
-        require('plugins/' .. value.configFile)
-    end
-end

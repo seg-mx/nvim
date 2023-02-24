@@ -18,6 +18,7 @@ local plugins = {
     { id = 'theprimeagen/harpoon' },
     { id = 'eandrju/cellular-automaton.nvim' },
     { id = 'nvim-colortils/colortils.nvim' },
+    { id = 'theprimeagen/git-worktree.nvim' },
     {
         id = 'neoclide/coc.nvim',
         options = [[{ 'branch': 'release' }]]

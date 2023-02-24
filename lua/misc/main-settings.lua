@@ -18,6 +18,7 @@ vim.opt.cursorline = true
 -- Search
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.hlsearch = false
 
 vim.opt.scrolloff = 7
 vim.opt.lazyredraw = true

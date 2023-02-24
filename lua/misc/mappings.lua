@@ -19,8 +19,3 @@ vim.keymap.set('n', '<Leader>l', '<C-w>l')
 
 vim.keymap.set('n', '<Leader>nt', '<Cmd>NERDTreeToggle<CR>')
 
--- Find files using Telescope command-line sugar.
-vim.keymap.set('n', '<leader>ff', '<Cmd>Telescope find_files<CR>')
-vim.keymap.set('n', '<leader>fg', '<Cmd>Telescope live_grep<CR>')
-vim.keymap.set('n', '<leader>fb', '<Cmd>Telescope buffers<CR>')
-vim.keymap.set('n', '<leader>fh', '<Cmd>Telescope help_tags<CR>')

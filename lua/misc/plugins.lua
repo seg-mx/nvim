@@ -17,6 +17,7 @@ local plugins = {
     { id = 'nvim-lua/plenary.nvim' },
     { id = 'theprimeagen/harpoon' },
     { id = 'eandrju/cellular-automaton.nvim' },
+    { id = 'nvim-colortils/colortils.nvim' },
     {
         id = 'neoclide/coc.nvim',
         options = [[{ 'branch': 'release' }]]

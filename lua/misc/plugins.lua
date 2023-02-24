@@ -15,6 +15,7 @@ local plugins = {
     { id = 'nvim-lualine/lualine.nvim' },
     { id = 'tpope/vim-sleuth' },
     { id = 'nvim-lua/plenary.nvim' },
+    { id = 'theprimeagen/harpoon' },
     {
         id = 'neoclide/coc.nvim',
         options = [[{ 'branch': 'release' }]]

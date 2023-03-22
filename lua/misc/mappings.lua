@@ -1,8 +1,8 @@
 vim.g.mapleader = " "
 
 vim.keymap.set('n', '<Leader>;', '$a;<Esc>')
-vim.keymap.set('n', '<Leader>w', '<Cmd>w<CR>')
-vim.keymap.set('n', '<Leader>q', '<Cmd>q<CR>')
+vim.keymap.set('n', '<Leader>w', require('commands.save').Save)
+vim.keymap.set('n', '<Leader>qq', '<Cmd>q<CR>')
 vim.keymap.set('n', '<Leader>eq', '<Cmd>q!<CR>')
 
 vim.keymap.set('n', '<C-j>', '10<C-e>')

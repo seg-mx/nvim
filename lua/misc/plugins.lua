@@ -1,8 +1,6 @@
 local plugins = {
     { id = 'mattn/emmet-vim' },
-    { id = 'preservim/nerdtree' },
     { id = 'windwp/nvim-autopairs' },
-    { id = 'Xuyuanp/nerdtree-git-plugin' },
     { id = 'ryanoasis/vim-devicons' },
     { id = 'nvim-treesitter/nvim-treesitter' },
     { id = 'mhinz/vim-signify' },

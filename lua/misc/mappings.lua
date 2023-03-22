@@ -25,3 +25,7 @@ vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv')
 vim.keymap.set('x', '<Leader>p', '"_dP')
 
 vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+vim.keymap.set('n', '<leader>th', '<Cmd>botright new | :terminal<CR>')
+vim.keymap.set('n', '<leader>ts', '<Cmd>botright vnew | :terminal<CR>')
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')

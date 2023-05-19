@@ -18,6 +18,7 @@ local plugins = {
     { id = 'nvim-colortils/colortils.nvim' },
     { id = 'nvim-telescope/telescope-fzy-native.nvim' },
     { id = 'theprimeagen/git-worktree.nvim' },
+    { id = 'nvim-treesitter/nvim-treesitter-context' },
     {
         id = 'neoclide/coc.nvim',
         options = [[{ 'branch': 'release' }]]

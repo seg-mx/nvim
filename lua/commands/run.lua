@@ -1,14 +1,15 @@
 -- doempty prints a lot of spaces for cleaning command section
 -- if you don't want to create/use that script, replace this value to `!`
-local prefixCommand = '!doempty && '
+local prefixCommand = 'botright new | :e term://doempty && '
 
 local function RunCommandFromDictionary(dictionary, key)
     if dictionary[key] == nil then
         print('Command not found')
-        return
+        return false
     end
 
     vim.cmd(prefixCommand .. dictionary[key])
+    return true
 end
 
 function RunProject()
@@ -20,7 +21,9 @@ function RunProject()
         html = 'npm run start',
     }
 
-    RunCommandFromDictionary(commands, filetype);
+    if RunCommandFromDictionary(commands, filetype) then
+        vim.api.nvim_feedkeys("G", "n", true);
+    end
 end
 
 return {

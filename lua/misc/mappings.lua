@@ -27,3 +27,5 @@ vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set('n', '<leader>th', '<Cmd>botright new | :terminal<CR>')
 vim.keymap.set('n', '<leader>ts', '<Cmd>botright vnew | :terminal<CR>')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
+
+vim.keymap.set('n', '<C-d>', '<Cmd>q<CR>')

@@ -11,18 +11,6 @@ local function RunCommandFromDictionary(dictionary, key)
     vim.cmd(prefixCommand .. dictionary[key])
 end
 
-function Run()
-    local filetype = vim.bo.filetype;
-    local commands = {
-        rust = 'rustc -o ~/.executables% % && ~/.executables/%',
-        javascript = 'node %',
-        typescript = 'tsc % --outFile ~/.executables/%:t:r && node ~/.executables/%:t:r',
-        sh = 'bash %',
-    }
-
-    RunCommandFromDictionary(commands, filetype);
-end
-
 function RunProject()
     local filetype = vim.bo.filetype;
     local commands = {
@@ -36,6 +24,5 @@ function RunProject()
 end
 
 return {
-    Run = Run,
     RunProject = RunProject
 }

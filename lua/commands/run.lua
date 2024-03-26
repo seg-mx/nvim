@@ -1,6 +1,4 @@
--- doempty prints a lot of spaces for cleaning command section
--- if you don't want to create/use that script, replace this value to `!`
-local prefixCommand = 'botright new | :e term://doempty && '
+local prefixCommand = 'botright new | :e term://'
 
 local function RunCommandFromDictionary(dictionary, key)
     if dictionary[key] == nil then

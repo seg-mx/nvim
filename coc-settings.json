@@ -3,7 +3,10 @@
   "coc.preferences.extensionUpdateCheck": "never",
   "diagnostic.warningSign": "",
   "diagnostic.errorSign": "",
-  "diagnostic.infoSign": "",
-  "diagnostic.hintSign": "ﯧ",
-  "Lua.hint.enable": false
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "󰌵",
+  "Lua.hint.enable": false,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualTextPrefix": "<- "
 }

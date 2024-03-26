@@ -24,6 +24,18 @@ function RunProject()
     end
 end
 
+function RunExtra()
+    local filetype = vim.bo.filetype;
+    local commands = {
+        rust = 'cargo clippy',
+    }
+
+    if RunCommandFromDictionary(commands, filetype) then
+        vim.api.nvim_feedkeys("G", "n", true);
+    end
+end
+
 return {
-    RunProject = RunProject
+    RunProject = RunProject,
+    RunExtra = RunExtra,
 }

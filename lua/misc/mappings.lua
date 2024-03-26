@@ -8,7 +8,9 @@ vim.keymap.set('n', '<Leader>eq', '<Cmd>q!<CR>')
 vim.keymap.set('n', '<C-j>', '10<C-e>')
 vim.keymap.set('n', '<C-k>', '10<C-y>')
 
-vim.keymap.set('n', '<Leader>R', require('commands.run').RunProject)
+local run = require('commands.run')
+vim.keymap.set('n', '<Leader>R', run.RunProject)
+vim.keymap.set('n', '<Leader>C', run.RunExtra)
 
 vim.keymap.set('n', '<Leader>h', '<C-w>h')
 vim.keymap.set('n', '<Leader>j', '<C-w>j')

@@ -29,3 +29,21 @@ vim.keymap.set('n', '<leader>ts', '<Cmd>botright vnew | :terminal<CR>')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 
 vim.keymap.set('n', '<C-d>', '<Cmd>q<CR>')
+
+vim.keymap.set('n', 'gn', '<Cmd>bnext<CR>')
+
+vim.keymap.set('x', '<Leader>y', '"+y')
+vim.keymap.set('n', '<Leader>y', '"+y')
+
+vim.keymap.set('n', '<Leader>d', 'I<Esc>f=hbveyoprintln!("DEBUG <Esc>pvbUea: {<Esc>pa:?}");<Esc>');
+vim.keymap.set('n', 'D', 'ma/println!("DEBUG \\w\\+: {\\w\\+:?}");<Enter>dd\'a')
+
+vim.keymap.set('n', '<Leader>CH', function()
+    vim.api.nvim_set_hl(0, 'NoCursor', { blend = 100, ctermfg = 0 })
+    vim.cmd('set guicursor+=a:NoCursor/lCursor')
+end)
+
+vim.keymap.set('n', '<Leader>CR', function()
+    vim.api.nvim_set_hl(0, 'NoCursor', { blend = 100, ctermfg = 0 })
+    vim.cmd('set guicursor-=a:NoCursor/lCursor')
+end)

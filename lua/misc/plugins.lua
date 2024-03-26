@@ -6,7 +6,11 @@ local plugins = {
     { id = 'mhinz/vim-signify' },
     { id = 'tpope/vim-fugitive' },
     { id = 'junegunn/gv.vim' },
-    { id = 'navarasu/onedark.nvim' },
+
+    -- Themes
+    -- { id = 'navarasu/onedark.nvim' },
+    { id = 'projekt0n/github-nvim-theme' },
+
     { id = 'lukas-reineke/indent-blankline.nvim' },
     { id = 'numToStr/Comment.nvim' },
     { id = 'norcalli/nvim-colorizer.lua' },
